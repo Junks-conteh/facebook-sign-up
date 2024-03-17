@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    background: #e0e2e5;
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 11rem;
+}
+.facebook h1{
+    color: blue;
+    font-size: 60px;
+    font-weight: 600;
+}
+.main-container .facebook h1{
+    width: 360px;
+    margin: 0 0;
+}
+.main-container .facebook p{
+    font-size: 1.7rem;
+}
+.main-container .form-box{
+    text-align: center;
+}
+.main-container .form-box .content{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem gray;
+}
+.main-container .form-box .content .box{
+    text-align: center;
+    padding: .7rem;
+}
+.main-container .form-box .content .box input[type="text"],
+.main-container .form-box .content .box input[type="password"]{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .8rem;
+    margin-bottom: .3rem;
+    border: 1px solid #90a1c6;
+    outline: none;
+    opacity: 60%;
+    border-radius: 3px;
+}
+.main-container .form-box .content .box input[type="text"]:focus,
+.main-container .form-box .content .box input[type="password"]:focus
+{
+  opacity: 100%;
+  color: black;
+  border: 1px solid #1877f2;
+  box-shadow: 0 0 3px #1877f2;
+}
+.main-container .form-box .content .box input[type="submit"]{
+    background: #1877f2;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-container .form-box .content .box input[type="submit"]:hover{
+    background: #166fe5;
+}
+.main-container .form-box .content .forgot{
+    text-align: center;
+    margin: .8rem auto;
+}
+.main-container .form-box .content .forgot .btn{
+    display: block;
+    border-bottom: 1px solid #e0e2e5;
+    padding-bottom: 1rem;
+    width: 98%;
+    color: #1877f2;
+}
+.main-container .form-box .content .forgot .create-new{
+    display: inline-block;
+    background: #36a420;
+    padding: .8rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: .6rem;
+}
+@media(max-width:600px){
+    .main-container{
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .main-container .form-box .content{
+        display: block;
+        margin: 1rem auto;
+        width: 380px;
+    }
+    .main-container .facebook h1{
+        color: blue;
+        font-size: 60px;
+        font-weight: 600;
+        margin-left: 90px;
+        text-align: center;
+    }
+
+}
